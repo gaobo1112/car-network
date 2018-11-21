@@ -32,10 +32,33 @@ class UE(NetworkDevice):
                 foundBS = bs.ID
         self.connetedToBS = foundBS
 
+    def connectToTheBestBS(self, BS_vector):
+        theBestSINR = -1000
+        foundBS = -1
+        for bs in BS_vector:
+            self.connetedToBS = bs.ID
+            currentSINR = self.calculateSINR(BS_vector)
+            if theBestSINR < currentSINR or foundBS == -1:
+                theBestSINR = currentSINR
+                foundBS = bs.ID
+        self.connetedToBS = foundBS
+
+    def calculateNoise(self, bandwidth=20):
+        pass
+
+    def calculateSINR(self, BS_vector):
+        pass
+
+
+
+
 # 定义基站
 class BS(NetworkDevice):
     def __init__(self):
         self.ID = 0
-        self.sendPower = 0
-        self.x = 0
-        self.y = 0
+        self.insendPower = 0
+        self.outsidePower = 0
+        self.Rc = 1666.3793
+        self.angel = 0
+        self.turnedOn = False
+        self.sendPower = 40
