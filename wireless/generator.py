@@ -1,4 +1,4 @@
-import devices
+from wireless.devices import *
 import math
 import random
 
@@ -15,7 +15,7 @@ class Generator:
         self.parent.constraintAreaMaxX = 6.5 * W_hex
         self.parent.constraintAreaMaxY = 3 * H_hex + 3.5 * radius
         for i in range(0, numberOfBS):
-            bs = devices.BS()
+            bs = BS()
             bs.ID = i
             bs.turnedOn = True
             # a = (numberOfBS - 2) % 6
@@ -60,7 +60,7 @@ class Generator:
     def insertURrandomly(self, numberOfDevices):
         number = 0
         for i in range(0, numberOfDevices):
-            ue = devices.UE()
+            ue = UE()
             ue.ID = number
             ue.x = random.uniform(0,self.parent.constraintAreaMaxX)
             ue.y = random.uniform(0,self.parent.constraintAreaMaxY)
