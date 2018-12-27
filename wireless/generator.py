@@ -57,6 +57,32 @@ class Generator:
 
 
 
+    def createBS(self,radius,numberofbigBS=4):
+        self.parent.constraintAreaMaxX = 4*radius
+        self.parent.constraintAreaMaxY = 4*radius
+        for i in range(0, numberofbigBS):
+            bs = BS()
+            bs.ID = i
+            self.parent.bs.append(bs)
+
+        for i in range(0,numberofbigBS):
+            if i == 0:
+                self.parent.bs[i].x = radius
+                self.parent.bs[i].y = radius
+            elif i == 1:
+                self.parent.bs[i].x = radius*3
+                self.parent.bs[i].y = radius
+            elif i == 2:
+                self.parent.bs[i].x = radius
+                self.parent.bs[i].y = radius*3
+            else:
+                self.parent.bs[i].x = radius*3
+                self.parent.bs[i].y = radius*3
+
+
+
+
+
     def insertURrandomly(self, numberOfDevices):
         number = 0
         for i in range(0, numberOfDevices):

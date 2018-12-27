@@ -10,5 +10,9 @@
     <orderEntry type="module" module-name="alien-game" />
     <orderEntry type="module" module-name="C-ran" />
     <orderEntry type="module" module-name="deep-q-learning" />
+    <orderEntry type="module" module-name="DeepLearningFlappyBird" />
+    <orderEntry type="module" module-name="pyltes" />
+    <orderEntry type="module" module-name="TensorFlow_3" />
+    <orderEntry type="module" module-name="5_Deep_Q_Network" />
   </component>
 </module>

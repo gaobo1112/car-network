@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../5_Deep_Q_Network/.idea/5_Deep_Q_Network.iml" filepath="$PROJECT_DIR$/../5_Deep_Q_Network/.idea/5_Deep_Q_Network.iml" />
       <module fileurl="file://$PROJECT_DIR$/../C-ran/.idea/C-ran.iml" filepath="$PROJECT_DIR$/../C-ran/.idea/C-ran.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../DeepLearningFlappyBird/.idea/DeepLearningFlappyBird.iml" filepath="$PROJECT_DIR$/../DeepLearningFlappyBird/.idea/DeepLearningFlappyBird.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../TensorFlow_3/.idea/TensorFlow_3.iml" filepath="$PROJECT_DIR$/../TensorFlow_3/.idea/TensorFlow_3.iml" />
       <module fileurl="file://$PROJECT_DIR$/../alien-game/.idea/alien-game.iml" filepath="$PROJECT_DIR$/../alien-game/.idea/alien-game.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/car-net.iml" filepath="$PROJECT_DIR$/.idea/car-net.iml" />
       <module fileurl="file://$PROJECT_DIR$/../deep-q-learning/.idea/deep-q-learning.iml" filepath="$PROJECT_DIR$/../deep-q-learning/.idea/deep-q-learning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pyltes/.idea/pyltes.iml" filepath="$PROJECT_DIR$/../pyltes/.idea/pyltes.iml" />
     </modules>
   </component>
 </project>
